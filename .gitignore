@@ -1,5 +1,4 @@
 docker-compose.yml
-custom_files/
 *.pbf
 !tests/*.pbf
 *.tar
