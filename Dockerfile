@@ -37,8 +37,8 @@ ENV serve_tiles=True
 # based on https://jtreminio.com/blog/running-docker-containers-as-current-host-user/, but this use case needed a more customized approach
 
 # with that we can properly test if the default was used or not
-ARG VALHALLA_UID=59999
-ARG VALHALLA_GID=59999
+ARG VALHALLA_UID=59998
+ARG VALHALLA_GID=59998
 
 RUN groupadd -g ${VALHALLA_GID} valhalla && \
   useradd -lmu ${VALHALLA_UID} -g valhalla valhalla && \
